@@ -76,6 +76,13 @@ const Form = () => {
     if (savedUser) {
       setPageType("login");
     }
+    /* Yes, the values from the frontend will
+     be transferred to the database using the /auth/register 
+     endpoint. The /auth/register endpoint is a RESTful
+      endpoint that is used to register new users.
+       The endpoint takes a POST request with the form
+        data as the body of the request. 
+    The endpoint will then save the form data in the database.*/
   };
 
   const login = async (values, onSubmitProps) => {
